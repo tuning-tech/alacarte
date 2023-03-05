@@ -14,6 +14,7 @@ defmodule Store.Application do
       {Phoenix.PubSub, name: Store.PubSub},
       # Start Finch
       {Finch, name: Store.Finch},
+      {DynamicSupervisor, strategy: :one_for_one, name: Store.RoomSupervisor},
       # Start the Endpoint (http/https)
       StoreWeb.Endpoint
       # Start a worker by calling: Store.Worker.start_link(arg)
