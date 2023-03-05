@@ -3,5 +3,5 @@ import { Food } from "./Food";
 export class CartItem{
   constructor(public food:Food){ }
   quantity:number = 1 ;
-  price: number = this.food.price;
+  price: number = this.food && this.food.price ? this.food.price:0;
 }
