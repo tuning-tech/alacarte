@@ -14,3 +14,8 @@
 
 - Try sharing the app link to multiple tabs, multiple devices, we should be able to collaboratively edit the fodd ordering cart
 
+
+## Demo
+
+![demo](alacarte2.gif?raw=true  "alacarte")
+
