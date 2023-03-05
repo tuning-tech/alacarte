@@ -16,7 +16,7 @@ export class SyncService {
 
   ydoc = new Y.Doc();
   ymap = this.ydoc.getMap("cart");
-  provider = new WebrtcProvider('group', this.ydoc, { signaling: ['ws://192.168.1.33:4444'] });
+  provider = new WebrtcProvider('group', this.ydoc, { signaling: ['ws://localhost:4444'] });
   dbprovider = new IndexeddbPersistence('cart-data', this.ydoc);
 
   foods: Food[] = []
