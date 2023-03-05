@@ -80,7 +80,14 @@ export class SyncService {
       console.log(item, value);
       if (value > 0) {
         let food = this.foods.filter(food => food.id == item)[0]
+        console.log(food);
+        
+        if(!food || !food.id){
+          return
+        }
         let cartItem: CartItem = new CartItem(food)
+        console.log(cartItem);
+        
         cartItem.price = food.price * value
         cartItem.quantity = value
         cart.items.push(cartItem)
